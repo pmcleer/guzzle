@@ -16,9 +16,9 @@
   $promise->wait();
 
 
-  echo "<br/><br/>";
-  $client = new GuzzleHttp\Client();
-  $res = $client->get('https://api.nationalize.io/?name=philip');
+  echo "<br/><br/>here2";
+  $client1 = new GuzzleHttp\Client();
+  $res = $client1->get('https://api.publicapis.org/entries');
   echo $res->getStatusCode();           // 200
   echo "<br/><br/>";
   //echo $res->getHeader('content-type'); // 'application/json; charset=utf8'
